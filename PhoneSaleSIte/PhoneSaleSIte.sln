@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneSaleSIte", "PhoneSaleSIte\PhoneSaleSIte.csproj", "{693A0C4D-69F6-4C4A-A0F8-696AC2AE058E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneSaleSite", "PhoneSaleSIte\PhoneSaleSite.csproj", "{693A0C4D-69F6-4C4A-A0F8-696AC2AE058E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Entity\Entity.csproj", "{B812C863-6EA1-4244-984F-47A82819A965}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{693A0C4D-69F6-4C4A-A0F8-696AC2AE058E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{693A0C4D-69F6-4C4A-A0F8-696AC2AE058E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{693A0C4D-69F6-4C4A-A0F8-696AC2AE058E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B812C863-6EA1-4244-984F-47A82819A965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B812C863-6EA1-4244-984F-47A82819A965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B812C863-6EA1-4244-984F-47A82819A965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B812C863-6EA1-4244-984F-47A82819A965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
