@@ -10,9 +10,9 @@ namespace PhoneSaleSite.Extensions
         {
             service.AddTransient<IUserRepository, UserRepository>();
 
-            //service.AddTransient<IPhoneRepository, PhoneRepository>();
+            service.AddTransient<IPhoneRepository, PhoneRepository>();
 
-            //service.AddTransient<IOrderRepository, OrderRepository>();
+            service.AddTransient<IOrderRepository, OrderRepository>();
         }
     }
 }
