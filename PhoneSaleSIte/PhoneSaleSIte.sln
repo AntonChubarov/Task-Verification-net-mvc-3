@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneSaleSite", "PhoneSaleS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Entity\Entity.csproj", "{B812C863-6EA1-4244-984F-47A82819A965}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{669D7C23-BD73-407E-B9EB-BBD06B697A6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B812C863-6EA1-4244-984F-47A82819A965}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B812C863-6EA1-4244-984F-47A82819A965}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B812C863-6EA1-4244-984F-47A82819A965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669D7C23-BD73-407E-B9EB-BBD06B697A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669D7C23-BD73-407E-B9EB-BBD06B697A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669D7C23-BD73-407E-B9EB-BBD06B697A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669D7C23-BD73-407E-B9EB-BBD06B697A6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PhoneSaleSite.Helpers;
+using PhoneSaleSite.Extensions;
 
 namespace PhoneSaleSIte
 {
@@ -26,6 +27,7 @@ namespace PhoneSaleSIte
                 ServerVersion.AutoDetect(Configuration.GetConnectionString("DefaultConnection")),
                 x => x.MigrationsAssembly("Entity")));
             services.AddMvc(options => options.Filters.Add<GlobalExceptionHandler>());
+            ServiceCollectionExtensions.AddEFModule(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,13 +50,19 @@ namespace PhoneSaleSIte
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "register",
+                    pattern: "{controller=Account}/{action=Register}");
+                endpoints.MapControllerRoute(
+                    name: "login",
+                    pattern: "{controller=Account}/{action=Login}");
             });
         }
     }
