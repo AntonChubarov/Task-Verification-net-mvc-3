@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Common.Models;
 using Entity.Models;
 using Entity.Repository.Interface;
@@ -20,7 +16,7 @@ namespace Entity.Repository.Implementation
         }
         public async Task<User> AddUserToDbAsync(RegisterModel model)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email); // var user = (await _context.Users.Where(u => u.Email == model.Email).ToListAsync()).FirstOrDefault();
             if (user == null)
             {
                 user = new User { Email = model.Email, Password = model.Password };

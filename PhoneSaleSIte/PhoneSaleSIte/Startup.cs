@@ -63,6 +63,12 @@ namespace PhoneSaleSIte
                 endpoints.MapControllerRoute(
                     name: "login",
                     pattern: "{controller=Account}/{action=Login}");
+                endpoints.MapControllerRoute(
+                    name: "phone",
+                    pattern: "{controller=PhonePrice}/{action=Phone}");
+                endpoints.MapControllerRoute(
+                    name: "buy",
+                    pattern: "{controller=PhonePrice}/{action=Buy}");
             });
         }
     }

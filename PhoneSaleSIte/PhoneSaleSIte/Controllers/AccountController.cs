@@ -25,8 +25,12 @@ namespace PhoneSaleSite.Controllers
         //[ValidateAntiForgeryToken]
         public ActionResult Register(RegisterModel model)
         {
+            if (model.Password != model.ConfirmPassword)
+            {
+                throw new Exception("Passwords don't match");
+            }
             var user = _userRepo.AddUserToDbAsync(model);
-            return View(user);
+            return View("Index");
         }
 
         // GET: Login
